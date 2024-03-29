@@ -1,12 +1,17 @@
 #include "../ata_printf.h"
 
-void    ata_putstr(char *str)
+int     ft_strlen(char *str)
 {
     int i = 0;
 
     while (str[i])
-    {
-        write(1, &str[i], 1);
         i++;
-    }
+    return (i);
+}
+
+int    ata_putstr(char *str)
+{
+    if (!str)
+		return (write(1, "(null)", 6));
+    return(write(1, str, ft_strlen(str)));
 }
