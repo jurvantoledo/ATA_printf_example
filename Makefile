@@ -4,7 +4,9 @@ EXTRA_ATA_FUNCTIONS = ata_functions
 
 SRC =	main.c \
 		ata_printf.c \
-		${EXTRA_ATA_FUNCTIONS}/ata_putnbr.c
+		${EXTRA_ATA_FUNCTIONS}/ata_putnbr.c \
+		${EXTRA_ATA_FUNCTIONS}/ata_putstr.c \
+		${EXTRA_ATA_FUNCTIONS}/ata_putchar.c
 
 OBJ_FILES = ${SRC:%.c=%.o}
 

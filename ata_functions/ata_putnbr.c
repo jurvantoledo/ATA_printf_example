@@ -25,18 +25,18 @@ int	ata_putnbr(int n)
 	nb_length = n;
 	if (n == -2147483648)
 	{
-		puts("-2");
+		ata_putstr("-2");
 		n = 147483648;
 	}
 	if (n < 0)
 	{
-		putchar('-');
+		ata_putchar('-');
 		n = n * -1;
 	}
 	if (n >= 0 && n <= 9)
 	{
 		t = n + '0';
-		putchar(t);
+		ata_putchar(t);
 	}
 	else
 	{
