@@ -6,7 +6,8 @@ SRC =	main.c \
 		ata_printf.c \
 		${EXTRA_ATA_FUNCTIONS}/ata_putnbr.c \
 		${EXTRA_ATA_FUNCTIONS}/ata_putstr.c \
-		${EXTRA_ATA_FUNCTIONS}/ata_putchar.c
+		${EXTRA_ATA_FUNCTIONS}/ata_putchar.c \
+		${EXTRA_ATA_FUNCTIONS}/ata_unsigned_putnbr.c
 
 OBJ_FILES = ${SRC:%.c=%.o}
 

@@ -14,9 +14,10 @@
 
 #define ATA_PRINTF_H
 
-int     ata_putnbr(int n);
-int     ata_putstr(char *str);
-char    ata_putchar(char c);
+int             ata_putnbr(int n);
+int             ata_putstr(char *str);
+char            ata_putchar(char c);
+unsigned int	ata_unsigned_putnbr(unsigned int n);
 
 int ata_printf(const char *format, ...);
  
